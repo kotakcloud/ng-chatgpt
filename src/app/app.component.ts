@@ -1,10 +1,24 @@
+// app.component.ts
 import { Component } from '@angular/core';
+// import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
+// import { filter } from 'rxjs/operators';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.less'
+  template: `
+    <router-outlet></router-outlet>
+  `
 })
 export class AppComponent {
-  title = 'ng-chatgpt';
+  /* constructor(private router: Router, private activatedRoute: ActivatedRoute) {
+    this.router.events.pipe(
+      filter(event => event instanceof NavigationEnd)
+    ).subscribe(() => {
+      let route = this.activatedRoute.firstChild;
+      if (route) {
+        const threadId = route.snapshot.params['id'];
+        // You can emit this threadId to a shared service if needed
+      }
+    });
+  } */
 }
