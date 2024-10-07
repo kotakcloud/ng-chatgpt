@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ChatWindowComponent } from './chat-window.component';
 import { ChatWrapperComponent } from './chat-wrapper.component';
 
 const routes: Routes = [
